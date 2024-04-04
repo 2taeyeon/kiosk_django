@@ -1,0 +1,6 @@
+<h1>Drink Category</h1>
+<ul>
+    {% for drink in drinks %}
+    <li><a href="{% url 'kiosk:drink_detail' drink.pk %}">{{ drink.drink_category }}</a></li>
+    {% endfor %}
+</ul>
